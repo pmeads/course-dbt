@@ -1,0 +1,22 @@
+version: 2
+
+sources:
+  - name: greenery
+    database: dbt
+    schema: public 
+
+    tables: 
+      - name: order_items
+        description: TBD
+      - name: users
+        description: Greenery Customers
+      - name: addresses
+        description: Customer addresses
+      - name: events
+        description: TBD
+      - name: orders
+        description: Customer orders 
+      - name: products
+        description: Greenery Products 
+      - name: promos
+        description: Greenery campaigns and promotions
