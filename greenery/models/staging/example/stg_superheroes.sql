@@ -16,4 +16,4 @@ SELECT
     skin_color,
     alignment,
     weight
-FROM public.superheroes
+FROM {{ source('tutorial', 'superheroes') }}
