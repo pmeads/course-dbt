@@ -40,6 +40,4 @@ models:
   greenery:
     
     staging:
-
-      greenery:
-        +materialized: table
+      +materialized: table
