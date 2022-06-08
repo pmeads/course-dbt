@@ -3,7 +3,7 @@ version: 2
 
 models:
   
-  - name: stg_addresses
+  - name: stg_greenery__addresses
     description: tbd
     columns:
       - name: address_id

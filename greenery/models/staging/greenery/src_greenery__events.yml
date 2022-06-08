@@ -3,7 +3,7 @@ version: 2
 
 models:
 
-  - name: stg_events
+  - name: stg_greenery__events
     description: tbd
     columns:
       - name: event_id
@@ -20,7 +20,7 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_users')
+              to: ref('stg_greenery__users')
               field: user_id
       - name: page_url
         description: tbd
@@ -36,11 +36,11 @@ models:
         description: tbd
         tests:
           - relationships:
-              to: ref('stg_orders')
+              to: ref('stg_greenery__orders')
               field: order_id     
       - name: product_id
         description: tbd
         tests:
           - relationships:
-              to: ref('stg_products')
+              to: ref('stg_greenery__products')
               field: product_id        

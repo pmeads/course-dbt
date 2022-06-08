@@ -4,7 +4,7 @@ with user_purchases as (
     user_id, 
     count(*) user_purchase_count
   
-  from {{ ref('stg_orders') }}
+  from {{ ref('stg_greenery__orders') }}
   
   group by user_id
   

@@ -5,7 +5,7 @@ with unique_sessions_per_hour as (
     date_trunc('hour',created_at) as hour, 
     count(*) as hourly_count
 
-  from {{ ref('stg_events') }}
+  from {{ ref('stg_greenery__events') }}
 
   group by 
     session_id, 

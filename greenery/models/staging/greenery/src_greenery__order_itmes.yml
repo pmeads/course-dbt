@@ -3,7 +3,7 @@ version: 2
 
 models:
 
-  - name: stg_order_items
+  - name: stg_greenery__order_items
     description: tbd
     columns:
       - name: order_id
@@ -11,14 +11,14 @@ models:
         tests:
           - not_null
           - relationships:
-              to: ref('stg_orders')
+              to: ref('stg_greenery__orders')
               field: order_id        
       - name: product_id
         description: tbd
         tests:
           - not_null
           - relationships:
-              to: ref('stg_products')
+              to: ref('stg_greenery__products')
               field: product_id  
       - name: quantity
         description: tbd

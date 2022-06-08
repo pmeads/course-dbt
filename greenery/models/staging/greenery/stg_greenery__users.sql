@@ -1,7 +1,7 @@
 
 with source as (
 
-   select * from {{ source('greenery','users') }}
+   select * from {{ source('src_greenery','users') }}
 
 ), 
 

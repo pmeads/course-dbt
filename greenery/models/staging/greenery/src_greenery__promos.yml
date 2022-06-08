@@ -3,7 +3,7 @@ version: 2
 
 models:
   
-  - name: stg_promos
+  - name: stg_greenery__promos
     description: tbd
     columns:
       - name: promo_id

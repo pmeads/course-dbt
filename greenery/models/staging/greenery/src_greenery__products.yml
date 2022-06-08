@@ -3,8 +3,7 @@ version: 2
 
 models:
   
-
-  - name: stg_products
+  - name: stg_greenery__products
     description: tbd
     columns:
       - name: product_id

@@ -4,7 +4,7 @@ with orders_per_hours as (
     count(*),
     date_trunc('hour',created_at) as hour
 
-  from {{ ref( 'stg_orders' ) }}
+  from {{ ref( 'stg_greenery__orders' ) }}
   
   group by date_trunc('hour',created_at)
 
