@@ -1,0 +1,49 @@
+
+version: 2
+
+models:
+
+  - name: stg_orders
+    description: tbd
+    columns:
+      - name: order_id
+        description: tbd
+        tests:
+          - unique
+          - not_null
+      - name: user_id
+        description: tbd
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id  
+      - name: address_id
+        description: tbd
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_addresses')
+              field: address_id  
+      - name: order_cost
+        description: tbd
+        tests:
+          - not_null
+          - positive_values
+      - name: shipping_cost
+        description: tbd
+        tests:
+          - not_null
+          - positive_values 
+      - name: order_total
+        description: tbd
+        tests:
+          - not_null
+          - positive_values 
+      - name: shipping_service
+        description: tbd
+        tests:
+          - dbt_expectations.expect_column_values_to_be_in_set:
+              value_set: ['fedex','dhl','ups','usps']
+              quote_values: true
+              row_condition: "shipping_service is not null"

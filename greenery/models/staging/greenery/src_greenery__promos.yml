@@ -1,0 +1,23 @@
+
+version: 2
+
+models:
+  
+  - name: stg_promos
+    description: tbd
+    columns:
+      - name: promo_id
+        description: "pk"
+        tests:
+          - unique
+          - not_null
+      - name: discount
+        description: "tbd"
+        tests:
+          - not_null
+      - name: status
+        description: "tbd"
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['inactive','active']

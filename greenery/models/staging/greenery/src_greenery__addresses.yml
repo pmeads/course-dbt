@@ -1,0 +1,32 @@
+
+version: 2
+
+models:
+  
+  - name: stg_addresses
+    description: tbd
+    columns:
+      - name: address_id
+        description: tbd
+        tests:
+          - not_null
+          - unique
+      - name: address
+        description: tbd
+        tests:
+          - not_null
+      - name: zipcode
+        description: tbd
+        tests: 
+          - not_null
+      - name: state
+        description: tbd
+        tests:
+          - not_null
+      - name: country
+        description: tbd
+        tests: 
+          - not_null
+
+    
+    

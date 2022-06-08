@@ -1,7 +1,7 @@
 version: 2
 
 sources:
-  - name: greenery
+  - name: src_greenery
     database: dbt
     schema: public 
 

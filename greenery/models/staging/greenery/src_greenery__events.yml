@@ -1,0 +1,46 @@
+
+version: 2
+
+models:
+
+  - name: stg_events
+    description: tbd
+    columns:
+      - name: event_id
+        description: tbd
+        tests:
+          - not_null
+          - unique
+      - name: session_id
+        description: tbd
+        tests:
+          - not_null
+      - name: user_id
+        description: tbd
+        tests:
+          - not_null
+          - relationships:
+              to: ref('stg_users')
+              field: user_id
+      - name: page_url
+        description: tbd
+        tests: 
+          - not_null
+      - name: event_type
+        description: tbd
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['checkout','package_shipped','add_to_cart','page_view']    
+      - name: order_id
+        description: tbd
+        tests:
+          - relationships:
+              to: ref('stg_orders')
+              field: order_id     
+      - name: product_id
+        description: tbd
+        tests:
+          - relationships:
+              to: ref('stg_products')
+              field: product_id        
