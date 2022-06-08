@@ -31,7 +31,11 @@ models:
         tests:
           - not_null
           - accepted_values:
-              values: ['checkout','package_shipped','add_to_cart','page_view']    
+              values: #['checkout','package_shipped','add_to_cart','page_view']   
+                - checkout
+                - package_shipped
+                - add_to_cart
+                - page_view 
       - name: order_id
         description: tbd
         tests:

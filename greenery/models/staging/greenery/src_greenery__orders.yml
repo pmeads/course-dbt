@@ -43,7 +43,13 @@ models:
       - name: shipping_service
         description: tbd
         tests:
-          - dbt_expectations.expect_column_values_to_be_in_set:
-              value_set: ['fedex','dhl','ups','usps']
-              quote_values: true
-              row_condition: "shipping_service is not null"
+          - accepted_values:
+              values:
+                - fedex
+                - dhl
+                - ups
+                - usps
+#          - dbt_expectations.expect_column_values_to_be_in_set:
+#              value_set: ['fedex','dhl','ups','usps']
+#              quote_values: true
+#              row_condition: "shipping_service is not null"
