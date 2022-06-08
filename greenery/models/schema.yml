@@ -200,5 +200,11 @@ models:
         description: tbd
         tests: 
           - not_null
+
+  - name: avg_orders_per_hour
+    description: tbd
+  
+  - name: how_many_users_made_n_purchases
+    description: tbd
     
     

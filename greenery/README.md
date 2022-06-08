@@ -24,8 +24,9 @@ with orders_per_hours as (
   select 
     count(*),
     date_trunc('hour',created_at) as hour
-    from dbt_philip_m.stg_orders
-    group by date_trunc('hour',created_at)
+    
+  from dbt_philip_m.stg_orders
+  group by date_trunc('hour',created_at)
 
 )
 
@@ -42,26 +43,40 @@ from dbt_philip_m.stg_orders
 
 - how many users made a particular amount of purchases
 with user_orders as (
-  select user_id, count(*) user_order_count
+
+  select 
+    user_id, 
+    count(*) user_order_count
+  
   from dbt_philip_m.stg_orders
+  
   group by user_id
+  
 ), 
+
 order_count as (
-  select user_order_count, count(*) order_count
+
+  select 
+    user_order_count as number_of_purchases, 
+    count(*) as number_of_users_who_purchased_this_amount
+  
   from user_orders
+  
   group by user_order_count
+  
   order by user_order_count
+  
 )
-select order_count, user_order_count
-from order_count
->> 25 --> 1
-28 --> 2
-34 --> 3
-20 --> 4
-10 --> 5
-2 --> 6
-4 --> 7
-1 --> 8
+
+number_of_purchases	number_of_users_who_purchased_this_amount
+1	25
+2	28
+3	34
+4	20
+5	10
+6	2
+7	4
+8	1
 
 - on avgerage, how many unique session do we have per hour? 
 with sessions_per_hour as (
