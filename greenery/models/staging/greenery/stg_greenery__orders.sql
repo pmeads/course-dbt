@@ -6,7 +6,7 @@ with source as (
 
 renamed as (
     
-    SELECT
+    select
       order_id,
       user_id,
       promo_id,
@@ -20,7 +20,7 @@ renamed as (
       estimated_delivery_at as estimated_delivery_at_utc,
       status
 
-    FROM
+    from
       source 
 
 )

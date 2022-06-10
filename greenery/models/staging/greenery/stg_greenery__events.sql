@@ -6,7 +6,7 @@ with source as (
 
 renamed as (
     
-    SELECT
+    select
       event_id,
       session_id,
       user_id,
@@ -16,7 +16,7 @@ renamed as (
       order_id,
       product_id
 
-    FROM
+    from
       source 
 
 )

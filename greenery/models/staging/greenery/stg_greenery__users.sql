@@ -7,7 +7,7 @@ with source as (
 
 renamed as (
     
-    SELECT
+    select
       user_id,
       first_name, 
       last_name, 
@@ -17,7 +17,7 @@ renamed as (
       updated_at as updated_at_utc,
       address_id
 
-    FROM
+    from
       source 
 
 )

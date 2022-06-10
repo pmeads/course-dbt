@@ -6,12 +6,12 @@ with source as (
 
 renamed as (
     
-    SELECT
+    select
       order_id,
       product_id,
       quantity
 
-    FROM
+    from
       source 
 
 )

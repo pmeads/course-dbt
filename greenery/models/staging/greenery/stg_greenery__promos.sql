@@ -6,12 +6,12 @@ with source as (
 
 renamed as (
     
-    SELECT
+    select
       promo_id,
       discount,
       status
 
-    FROM
+    from
       source 
 
 )

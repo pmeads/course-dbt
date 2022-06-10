@@ -6,14 +6,14 @@ with source as (
 
 renamed as (
     
-    SELECT
+    select
       address_id,
       address,
       zipcode,
       state,
       country
 
-    FROM
+    from
       source 
 
 )
