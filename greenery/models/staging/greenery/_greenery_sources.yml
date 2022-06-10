@@ -13,7 +13,7 @@ sources:
       - name: addresses
         description: Customer addresses
       - name: events
-        description: TBD
+        description: Online Store Events
       - name: orders
         description: Customer orders 
       - name: products

@@ -35,7 +35,8 @@ select trunc(avg(count),1) from orders_per_hours
 
 - avg time order takes from being placed to being delivered
 this info was derived by assuming the estimated delivery did not differ from the real delivery date. 
-typically, you'd have a status = 'completed' along with another date field like 'delivered_at'
+typically, you'd have a status = 'completed' along with another date field like 'delivered_at'. All 
+I can see is the estimated_delivery_at so I'll use that. 
 
 select avg(estimated_delivery_at - created_at) as time_diff
 from dbt_philip_m.stg_orders
