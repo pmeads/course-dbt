@@ -1,25 +1,25 @@
-with unique_sessions_per_hour as (
+-- on avgerage, how many unique session do we have per hour? 
+with sessions_each_hour as ( 
 
   select 
-    session_id, 
-    date_trunc('hour',created_at_utc) as hour, 
-    count(*) as hourly_count
+    distinct session_id, 
+    date_trunc('hour',created_at_utc) as hour  
 
-  from {{ ref('stg_greenery__events') }}
+  from dbt_philip_m.stg_greenery__events
 
-  group by 
-    session_id, 
-    date_trunc('hour',created_at_utc)
+  order by 2
 
-),
-
-avg_unique_sessions_per_hour as ( 
+), 
+sessions_per_hour as (
 
   select 
-    trunc(avg(hourly_count),2) as avg_unique_sessions_per_hour
+     hour, 
+     count(*) as hourly_count
 
-  from unique_sessions_per_hour
+  from sessions_each_hour
+
+  group by hour
 
 )
 
-select * from avg_unique_sessions_per_hour
+select trunc(avg(hourly_count),2) avg_sessions_per_hour from sessions_per_hour
