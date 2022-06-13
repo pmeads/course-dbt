@@ -18,6 +18,7 @@ renamed as (
       tracking_id,
       shipping_service,
       estimated_delivery_at as estimated_delivery_at_utc,
+      delivered_at as delivered_at_utc,
       status
 
     from
