@@ -26,7 +26,7 @@ promos as (
 final as ( 
 
     select * 
-    from products
+    from promos
 
 ) 
 

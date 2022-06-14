@@ -8,3 +8,5 @@ models:
     description: tbd
   - name: dim_promos
     description: tbd
+  - name: dim_addresses
+    description: tbd

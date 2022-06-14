@@ -16,7 +16,6 @@ greenery_address as (
 ),
 
 -- logical CTEs
-
 users_with_addresses as (
 
     select 
