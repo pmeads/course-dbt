@@ -102,3 +102,47 @@ sessions_per_hour as (
 
 select trunc(avg(hourly_count),2) avg_sessions_per_hour from sessions_per_hour
 >> 16.32
+
+
+### Week 2: Models, Tests
+
+What is our user repeat rate?
+(Repeat Rate = Users who purchased 2 or more times / users who purchased)
+
+What are good indicators of a user who will likely purchase again? 
+
+- the estimated delivery date was same day as delivered at
+- website was easy to navigate 
+What are indicators users are unlikely to purchase again? If you had more data, what features would you want to look into to answer this question?
+- delivery was late
+
+## marts
+# core
+- dim_users
+- dim_products
+- fct_orders
+- fct_order_items
+- fct_events
+# marketing
+- fct_user_events
+- fct_user_orders
+- fct_user_order_items
+what metrics might be particularly useful for marketing?
+- what location purchased more by state? by zip?
+- what marketing campains led to sales?  
+- what is the average amount of a product when bought? 
+- how long did it take for a customer to reorder? 
+- which products are reordered? 
+- which users ordered the most?
+- what is the avg amount spent? 
+- which shipping service had more delays?
+- what orders are preparing but already past their estimated delivery at?
+
+# product
+what metrics might be particularly useful for products?
+- which products did better? which didn't sell and should be phazed out? 
+- which products sold together? 
+- which products did better by location?
+- which products were viewed the most?
+- which products were viewed and bought? 
+- which products were viewed and did not result in a sale
