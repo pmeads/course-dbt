@@ -146,3 +146,6 @@ what metrics might be particularly useful for products?
 - which products were viewed the most?
 - which products were viewed and bought? 
 - which products were viewed and did not result in a sale
+- which products are out of stock or low on stock?
+
+## Explain the marts models you added. Why did you organize the models in the way you did?

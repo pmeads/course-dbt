@@ -1,0 +1,10 @@
+version: 2
+
+models:
+
+  - name: dim_users
+    description: tbd
+  - name: dim_products
+    description: tbd
+  - name: dim_promos
+    description: tbd
