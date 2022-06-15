@@ -10,3 +10,5 @@ models:
     description: >
       Sales resulting from each promotional campaign. 
       sIncludes name of campaign, discount of campaign, and status (active/inactive)
+  - name: user_order_repeat_rate
+    description: users who ordered more than once / all users who have ordered
