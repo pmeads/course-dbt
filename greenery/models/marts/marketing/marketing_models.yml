@@ -6,5 +6,7 @@ models:
     description: Number of sales by each state
   - name: purchases_by_zipcode
     description: Number of sales by each zipcode 
-  - name: orders_per_campaign
-    description: Sales resulting from each campaign. Includes name of campaign, discount, and status (active/inactive)
+  - name: orders_per_promo
+    description: >
+      Sales resulting from each promotional campaign. 
+      sIncludes name of campaign, discount of campaign, and status (active/inactive)

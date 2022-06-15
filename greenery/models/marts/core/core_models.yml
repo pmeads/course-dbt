@@ -18,3 +18,5 @@ models:
     description: tbd
   - name: fct_products_ordered
     description: tbd
+  - name: fct_user_orders
+    description: tbd
