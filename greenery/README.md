@@ -161,7 +161,7 @@ What are indicators users are unlikely to purchase again? If you had more data, 
 - fct_user_orders
 - fct_user_order_items
 what metrics might be particularly useful for marketing?
-- what location purchased more by state? by zip?
+- what location purchased more by state? by zip? done
 - what marketing campains led to sales?  
 - what is the average amount of a product when bought? 
 - how long did it take for a customer to reorder? 

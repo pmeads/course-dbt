@@ -3,6 +3,8 @@ version: 2
 models:
 
   - name: purchases_by_state
-    description: tbd
+    description: Number of sales by each state
   - name: purchases_by_zipcode
-    description: tbd
+    description: Number of sales by each zipcode 
+  - name: orders_per_campaign
+    description: Sales resulting from each campaign. Includes name of campaign, discount, and status (active/inactive)
