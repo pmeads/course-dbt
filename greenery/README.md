@@ -108,6 +108,37 @@ select trunc(avg(hourly_count),2) avg_sessions_per_hour from sessions_per_hour
 
 What is our user repeat rate?
 (Repeat Rate = Users who purchased 2 or more times / users who purchased)
+`
+with user_orders as (
+
+  select 
+    user_id, 
+    count(*) user_order_count
+  
+  from stg_greenery__orders
+  
+  group by user_id
+),
+user_order_counts as (
+
+  select 
+    count(*) as users_who_ordered, 
+    sum(
+        case 
+          when user_order_count > 1 
+          then 1 
+          else 0 
+        end
+    ) as users_who_ordered_more_than_once
+    
+  from user_orders
+)
+
+select 
+  round((users_who_ordered_more_than_once::decimal/users_who_ordered),2) as customer_order_repeat_rate
+  
+from user_order_counts
+`
 
 What are good indicators of a user who will likely purchase again? 
 

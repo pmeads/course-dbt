@@ -9,7 +9,10 @@ models:
   - name: avg_unique_sessions_per_hour
     description: tbd
   
-  - name: how_many_users_made_n_purchases
+  - name: user_order_count
+    description: tbd
+
+  - name: user_order_repeat_rate
     description: tbd
     
     
