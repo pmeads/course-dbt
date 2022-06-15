@@ -1,0 +1,6 @@
+version: 2
+
+models:
+
+  - name: purchases_by_location
+    description: tbd

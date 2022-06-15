@@ -1,0 +1,8 @@
+version: 2
+
+models:
+
+  - name: purchases_by_state
+    description: tbd
+  - name: purchases_by_zipcode
+    description: tbd
