@@ -25,6 +25,6 @@ user_order_counts as (
 )
 
 select 
-  round((users_who_ordered_more_than_once::decimal/users_who_ordered),2) as customer_order_repeat_rate
+  round((users_who_ordered_more_than_once::decimal/users_who_ordered),2) as user_order_repeat_rate
   
 from user_order_counts

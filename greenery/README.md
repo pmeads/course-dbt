@@ -108,6 +108,7 @@ select trunc(avg(hourly_count),2) avg_sessions_per_hour from sessions_per_hour
 
 What is our user repeat rate?
 (Repeat Rate = Users who purchased 2 or more times / users who purchased)
+
 `
 with user_orders as (
 
