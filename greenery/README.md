@@ -151,6 +151,7 @@ What are indicators users are unlikely to purchase again? If you had more data, 
 ## marts
 # core
 - dim_users
+- dim_locations
 - dim_products
 - fct_orders
 - fct_order_items

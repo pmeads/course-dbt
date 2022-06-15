@@ -10,3 +10,11 @@ models:
     description: tbd
   - name: dim_addresses
     description: tbd
+  - name: dim_locations
+    description: zips and states
+  - name: fct_events
+    description: tbd
+  - name: fct_orders
+    description: tbd
+  - name: fct_products_ordered
+    description: tbd
