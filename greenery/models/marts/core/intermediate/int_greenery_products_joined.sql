@@ -42,9 +42,10 @@ greenery_products_joined as (
         end as order_discount,
         oi.order_item_quantity,
         o.order_cost as total_order_cost,
+        o.created_at_utc,
         o.order_id,
         o.address_id,
-        o.user_id,
+        o.user_id,       
         p.product_id,
         promo.promo_id
 

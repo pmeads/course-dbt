@@ -14,5 +14,7 @@ models:
     description: users who ordered more than once / all users who have ordered
   - name: avg_product_order
     description: average number of a particular product in an order
-  - name: user_order_count
-    description: order count by user
+  - name: user_order_agg
+    description: order aggregates by user
+  - name: products_that_were_reordered
+    description: products that were ordered again and the amount of times the product was reordered
