@@ -1,40 +1,27 @@
-{{ config( materialized='table' ) }}
+{{ config( materialized='view' ) }}
 
 -- import CTEs
-with greenery_orders as (
+with greenery_products_joined as (
 
-    select *
-    from {{ ref('stg_greenery__orders') }}
-
-),
-
-greenery_order_items as (
-
-    select *
-    from {{ ref('stg_greenery__order_items') }}
+    select * from {{ ref('int_greenery_products_joined') }}
 
 ),
 
-greenery_products as (
-
-    select *
-    from {{ ref('stg_greenery__products') }}
-
-),
-
-greenery_products_ordered as (
+greenery_products_ordered as ( 
 
     select 
-        p.product_name,
-        p.product_price,
-        oi.order_item_quantity,
-        o.order_cost
-
-    from greenery_orders as o
-    join greenery_order_items as oi on oi.order_id = o.order_id
-    join greenery_products as p on oi.product_id = p.product_id
+        product_name,
+        product_price,
+        order_discount,
+        order_item_quantity,
+        total_order_cost,
+        (
+            (product_price * order_item_quantity) * 
+            ((100 - order_discount) * 0.01)
+        ) as order_product_cost
+    from greenery_products_joined
+    order by product_name
 
 )
-
 -- final query
 select * from greenery_products_ordered

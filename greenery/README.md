@@ -163,10 +163,10 @@ What are indicators users are unlikely to purchase again? If you had more data, 
 what metrics might be particularly useful for marketing?
 - what location purchased more by state? by zip? done
 - what marketing campains led to sales?  done
-- what is the average amount of a product when bought? 
-- how long did it take for a customer to reorder? 
+- what is the average amount of a product when bought? done
+- on avg how long did it take for a customer to reorder a product? 
 - which products are reordered? 
-- which users ordered the most?
+- which users ordered the most? done
 - what is the avg amount spent? 
 - which shipping service had more delays?
 - what orders are preparing but already past their estimated delivery at?

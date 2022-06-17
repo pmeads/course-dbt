@@ -12,3 +12,7 @@ models:
       sIncludes name of campaign, discount of campaign, and status (active/inactive)
   - name: user_order_repeat_rate
     description: users who ordered more than once / all users who have ordered
+  - name: avg_product_order
+    description: average number of a particular product in an order
+  - name: user_order_count
+    description: order count by user
