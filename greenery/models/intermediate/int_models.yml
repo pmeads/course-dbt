@@ -12,7 +12,7 @@ models:
   - name: user_order_count
     description: tbd
 
-  - name: user_order_repeat_rate
+  - name: customer_repeat_rate
     description: tbd
     
     

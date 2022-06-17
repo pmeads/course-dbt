@@ -9,7 +9,7 @@ renamed as (
     select
       order_id,
       product_id,
-      quantity
+      quantity as order_item_quantity
 
     from
       source 
