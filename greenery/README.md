@@ -195,4 +195,4 @@ I wanted answered for the product team.
 
 I can't seem to copy/paste the DAG here
 
-![dbt-dag](/workspace/course-dbt/images/dbt-dag.png)
+![dbt-dag](/images/dbt-dag.png)
