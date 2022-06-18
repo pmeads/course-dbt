@@ -18,3 +18,5 @@ models:
     description: order aggregates by user
   - name: products_that_were_reordered
     description: products that were ordered again and the amount of times the product was reordered
+  - name: shipping_service_lag
+    description: which shipping services had the most delays

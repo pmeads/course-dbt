@@ -168,7 +168,7 @@ what metrics might be particularly useful for marketing?
 - which products are reordered? done
 - which users ordered the most? done
 - what is the avg amount spent? done
-- which shipping service had more delays? 
+- which shipping service had more delays? done
 - what orders are preparing but already past their estimated delivery at? - can't do this one as date is stale
 
 # product
@@ -182,3 +182,12 @@ what metrics might be particularly useful for products?
 - which products are out of stock or low on stock?
 
 ## Explain the marts models you added. Why did you organize the models in the way you did?
+This was a tough assignment because I am very far removed from marketing! I have little business acumen 
+but with that said, I believe the strenght of this project was creating models in order to 
+answer business questions. For each question that I came up with a possible interest to each department, 
+I tried to write a sql statement against the staging tables to answer it. With this approach, 
+I realized what fact and dimension tables I could create to satisfy the business need. When there 
+was SQL that would be used in more than one place, I created an intermediate model. 
+I started out in the models/marts/core dir and created some generic dimension and fact tables. 
+Then in the marketing and product folders under models/marts, i tried to create models that would 
+use the core tables to answer the questions I came up with. 
