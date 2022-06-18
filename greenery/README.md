@@ -164,7 +164,7 @@ what metrics might be particularly useful for marketing?
 - what location purchased more by state? by zip? done
 - what marketing campains led to sales?  done
 - what is the average amount of a product when bought? done
-- on avg how long did it take for a customer to reorder a product? 
+- on avg how long did it take for a customer to reorder a product? done but not sure sql is correct
 - which products are reordered? done
 - which users ordered the most? done
 - what is the avg amount spent? done

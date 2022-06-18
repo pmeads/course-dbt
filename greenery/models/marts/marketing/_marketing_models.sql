@@ -14,9 +14,11 @@ models:
     description: users who ordered more than once / all users who have ordered
   - name: avg_product_order
     description: average number of a particular product in an order
-  - name: user_order_agg
+  - name: fct_user_order_agg
     description: order aggregates by user
   - name: products_that_were_reordered
     description: products that were ordered again and the amount of times the product was reordered
   - name: shipping_service_lag
     description: which shipping services had the most delays
+  - name: avg_reorder_time
+    description: on avg how long it takes for a user to reorder
