@@ -190,4 +190,7 @@ I realized what fact and dimension tables I could create to satisfy the business
 was SQL that would be used in more than one place, I created an intermediate model. 
 I started out in the models/marts/core dir and created some generic dimension and fact tables. 
 Then in the marketing and product folders under models/marts, i tried to create models that would 
-use the core tables to answer the questions I came up with. 
+use the core tables to answer the questions I came up with. I did not have time for the quesions 
+I wanted answered for the product team. 
+
+I can't seem to copy/paste the DAG here
