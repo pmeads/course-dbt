@@ -194,3 +194,5 @@ use the core tables to answer the questions I came up with. I did not have time 
 I wanted answered for the product team. 
 
 I can't seem to copy/paste the DAG here
+
+![dbt-dag](/workspace/course-dbt/images/dbt-dag.png)
