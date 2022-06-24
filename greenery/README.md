@@ -193,6 +193,8 @@ Then in the marketing and product folders under models/marts, i tried to create 
 use the core tables to answer the questions I came up with. I did not have time for the quesions 
 I wanted answered for the product team. 
 
-I can't seem to copy/paste the DAG here
+### DAG Image:
 
 ![dbt-dag](/images/dbt-dag.png)
+
+Did some tests but did not get to answering the questions yet
