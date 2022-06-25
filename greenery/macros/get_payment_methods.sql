@@ -1,4 +1,4 @@
-{% macro get_payment_methos() %}
+/*{% macro get_payment_methos() %}
 
 {% set payment_mehods_sql %}
 
@@ -9,10 +9,9 @@ order by 1
 
 {% endset %}
 
-{{% set results = run_query(payment_methods_query) %}
+{% set results = run_query(payment_methods_query) %}
 
 {% if execute %}
-{# Return the first column #}
 {% set results_list = results.columns[0].values() %}
 {% else %}
 {% set results_list = [] %}
@@ -20,4 +19,4 @@ order by 1
 
 {{ return(results_list) }}
 
-{% endmacro %}
+{% endmacro %}*/

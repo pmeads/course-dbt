@@ -24,3 +24,5 @@ models:
     description: on avg how long it takes for a user to reorder
   - name: avg_sessions_each_hour
     description: avg number of sessions per hour
+  - name: converstion_rate
+    description: ""

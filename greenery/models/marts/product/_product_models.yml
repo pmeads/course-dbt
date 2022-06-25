@@ -1,0 +1,6 @@
+version: 2
+
+models:
+
+  - name: conversion_rate_by_product
+    description: Number of sales by each state

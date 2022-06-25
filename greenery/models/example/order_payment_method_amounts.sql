@@ -7,6 +7,7 @@ sum(amount) as total_amount
 from {{ ref('raw_payments') }}
 group by 1
 */
+/*
 {%- set payment_methods = ["bank_transfer", "credit_card", "gift_card"] %}
 
 select
@@ -17,3 +18,4 @@ sum(case when payment_method = '{{payment_method}}' then amount end) as {{paymen
 {% endfor %}
 from {{ ref('raw_payments') }}
 group by 1
+*/
