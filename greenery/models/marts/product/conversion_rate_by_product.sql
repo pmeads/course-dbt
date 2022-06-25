@@ -35,7 +35,7 @@ product_page_views as (
 
 ),
 
-product_final as (
+conversion_rate_by_product_cte as (
 
   select
     checkout_count,
@@ -48,4 +48,4 @@ product_final as (
 
 )
 
-select * from product_final
+select * from conversion_rate_by_product_cte
