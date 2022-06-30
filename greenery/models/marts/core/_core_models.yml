@@ -22,3 +22,7 @@ models:
     description: tbd
   - name: fct_user_orders
     description: contains user info, zip and state, and number of orders they made
+  - name: customer_funnel
+    description: ""
+  - name: drop_offs_by_product
+    description: ""

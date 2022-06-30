@@ -4,3 +4,7 @@ models:
 
   - name: int_greenery_products_joined
     description: tbd
+  - name: int_event_product_funnel
+    description: ""
+  - name: int_sessio_funnel
+    description: ""
