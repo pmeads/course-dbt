@@ -8,6 +8,7 @@ I then created a intermediate model where i did the following work
 Using this int model, I created a customer funnel model that aggregated the different events, and then ran conversion rates on the results
 
 |                     	    | page_view	| add_to_cart	| checkouts	| updated_at |
+| ------------------------- | --------- | -----------   | --------- | ---------- |
 | Count	                    | 578	    | 467	        | 361	    | 2022-07-01T00:46:43.6Z |
 | Session Conversion Rate	| 1.00	    | 0.81	        | 0.62	    | 2022-07-01T00:46:43.6Z |
 | Checkout Conversion Rate*	| 0	        | 0	            | 0.77	    | 2022-07-01T00:46:43.6Z |
