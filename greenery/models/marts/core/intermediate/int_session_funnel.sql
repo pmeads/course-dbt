@@ -12,7 +12,8 @@ add_to_cart as (
         where add_to_cart_event = 1
         ),
 checkout as (
-        select distinct fct_events.session_id 
+        select 
+            distinct fct_events.session_id 
         from fct_events
         where checkout_event = 1
 ),

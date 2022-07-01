@@ -22,7 +22,9 @@ models:
     description: tbd
   - name: fct_user_orders
     description: contains user info, zip and state, and number of orders they made
-  - name: customer_funnel
-    description: ""
-  - name: drop_offs_by_product
-    description: ""
+  - name: user_conversion_rates
+    description: "Conversion rates based on the session funnel"
+  - name: fct_session_product_funnel
+    description: "Allows us to see the session funnel and dig deeper into product dimensions "
+  - name: fct_session_user_funnel
+    description: "Allows us to see the session funnel and dig deeper into customer dimensions"

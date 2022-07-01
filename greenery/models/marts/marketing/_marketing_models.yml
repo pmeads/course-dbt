@@ -26,3 +26,9 @@ models:
     description: avg number of sessions per hour
   - name: converstion_rate
     description: ""
+  - name: avg_orders_per_hour
+    description: "Class Homework"
+  - name: customer_repeat_rate
+    description: "Class Homework"
+  - name: order_count_agg
+    description: "Class Homework"
