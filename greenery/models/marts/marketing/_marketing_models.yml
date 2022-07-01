@@ -26,6 +26,8 @@ models:
     description: avg number of sessions per hour
   - name: converstion_rate
     description: ""
+  - name: user_conversion_rates
+    description: "Conversion rates based on the session funnel"
   - name: avg_orders_per_hour
     description: "Class Homework"
   - name: customer_repeat_rate
