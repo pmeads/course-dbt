@@ -20,6 +20,7 @@ select
     viewed_products_not_added_to_cart,
     product_in_cart_not_purchased,
     round(viewed_products_not_added_to_cart::decimal/product_viewed,2) as product_not_added_to_cart_rate,
-    round(product_in_cart_not_purchased::decimal/viewed_products_added_to_cart,2) as product_in_cart_not_purchased_rate
+    round(product_in_cart_not_purchased::decimal/viewed_products_added_to_cart,2) as product_in_cart_not_purchased_rate,
+    current_timestamp(1) as updated_at
 from product_drop_offs 
 order by product_name

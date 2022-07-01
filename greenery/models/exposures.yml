@@ -1,0 +1,23 @@
+version: 2
+
+exposures:  
+  - name: Session Funnel
+    description: >
+      Models that are used for our session funnel dashboard
+    type: dashboard
+    maturity: low
+    owner:
+      name: Philip Meads
+      email: philip_m@greenery.com
+    depends_on:
+      - ref('customer_funnel')
+  - name: Produdt Drop Offs
+    description: >
+      Models that are used to analyze product drop offs
+    type: dashboard
+    maturity: low
+    owner:
+      name: Philip Meads
+      email: philip_m@greenery.com
+    depends_on:
+      - ref('drop_offs_by_product')

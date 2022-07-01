@@ -44,7 +44,8 @@ union_cte as (
 select 
     header, 
     page_view, 
-    add_to_cart, checkouts, current_timestamp(1) as updated_at,
-    nextval('customer_funnel_seq') as id 
+    add_to_cart, 
+    checkouts, 
+    current_timestamp(1) as updated_at -- for snapshots
 from union_cte 
 order by field_order
